@@ -35,8 +35,24 @@
 - If commit has multiple parent commits, then that commit is created by merging two branches
 
 ## Process:
+### New Repo
 1. git init (initialize a git repo)
 2. git status (see status of repo)
 3. git add . (stage all untracked files)
 4. git rm --cached file (to unstage files)
 5. git commit -m"commit message" (to commit all staged files)
+
+### Connecting local repo to online github
+1. git remote -v (check existing remote origin)
+2. git remote add origin "repo-url" (to link local to remote)
+3. git push (to push all changes to online platform)
+
+### Existing repo(cloning)
+1. git clone repo-url (to clone project from github)
+
+### Github authenticaton using SSH
+1. Generate ssh keys: ssh-keygen -t rsa -b 4096 -C "email"
+2. It will prompt you to name that file: "file"
+3. Copy contents from file.pub
+4. Add SSH key in github, paste public key from file.pub
+5. Configure it with local ssh agent
