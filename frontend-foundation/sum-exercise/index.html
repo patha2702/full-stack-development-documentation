@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adder</title>
+    <style>
+      .main {
+        width: 50%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4;
+        margin: auto;
+      }
+      input {
+        font-size: large;
+        padding: 4px 8px;
+        margin: 4px;
+      }
+      input:focus {
+        outline: none;
+      }
+      #resultField {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <input oninput="debounceHandleAdd()" type="number" id="num1" />
+      <input oninput="debounceHandleAdd()" type="number" id="num2" />
+      <div id="resultField"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
