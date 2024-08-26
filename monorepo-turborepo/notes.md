@@ -15,3 +15,7 @@
 
 - Build System orchestrator:
     - Turborepo acts as a build system orchestrator rather than direct build system. It allows you to define tasks in your monorepo that call other tools (which are actual build systems) to perform these actions. These tools can be like tsc, vite, etc. It does dependency management, caching during builds
+
+- Folder structure:
+    - apps: This contains end user apps (backend, frontend, other services)
+    - packages: This contains helper packages common code needed by apps

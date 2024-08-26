@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { ToolTip } from "@repo/ui/tooltip";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         </ol>
 
         <div className={styles.ctas}>
+          <ToolTip />
           <a
             className={styles.primary}
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
